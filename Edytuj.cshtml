@@ -1,0 +1,2 @@
+@model Klient
+<h2>Edytuj klienta</h2><form asp-action="Edytuj" method="post" class="formularz"><input type="hidden" asp-for="Id" /><input type="hidden" asp-for="DataDodania" /><partial name="_Formularz" model="Model" /><button class="btn btn-warning">Zapisz zmiany</button> <a asp-action="Index" class="btn btn-secondary">Powrót</a></form>

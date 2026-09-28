@@ -1,0 +1,2 @@
+@model Klient
+<h2>Usuń klienta</h2><div class="alert alert-warning">Czy na pewno chcesz usunąć klienta <b>@Model.Imie @Model.Nazwisko</b>?</div><form asp-action="Usun" method="post"><input type="hidden" asp-for="Id" /><button class="btn btn-danger">Tak, usuń</button> <a asp-action="Index" class="btn btn-secondary">Anuluj</a></form>
